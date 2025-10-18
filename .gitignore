@@ -1,0 +1,87 @@
+# Hyprland Configuration .gitignore
+
+# Runtime files
+.initial_startup_done
+*.log
+
+# Cache and temporary files
+cache/
+.cache/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backup directory (unless you want to commit backups)
+backup_configs/
+
+# Current wallpaper symlinks/copies
+wallpaper_effects/.wallpaper_current
+.current_wallpaper
+
+# Generated color schemes (dynamic files)
+wallust/*.css
+wallust/*.json
+wallust/*.rasi
+waybar/wallust/
+rofi/wallust/
+swaync/wallust/
+
+# Personal wallpapers (too large for git)
+# Users should add their own wallpapers
+# Uncomment if you have a wallpapers directory here:
+# wallpapers/
+
+# Monitor-specific configs (may vary per system)
+# Uncomment if you don't want to track these:
+# monitors.conf
+# workspaces.conf
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.kate-swp
+
+# Lock files
+*.lock
+
+# Node modules (if using ags with npm)
+node_modules/
+
+# Python cache (for Weather.py, etc.)
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Personal/sensitive files
+# Add any files that contain personal info
+*_personal.conf
+*_private.conf
+secrets/
+.env
+
+# Build artifacts
+build/
+dist/
+*.o
+*.so
+
+# Generated files
+packages.txt.bak
+DEPENDENCIES.md.bak
+wallust/wallust-hyprland.conf
+wallpaper_effects/.wallpaper_current
+
+# Images and icons (too large for git)
+*.png
+*.jpg
+*.jpeg
+*.gif
+# Keep SVG icons for UI (they're usually small)
+# *.svg
+
+# Symlinks to current configs
+waybar/config
+waybar/style.css
+rofi/.current_wallpaper
